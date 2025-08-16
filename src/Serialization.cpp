@@ -39,6 +39,15 @@ namespace PerkPointsPerLevel::Serialization
                 a_intfc->ReadRecordData(&PerkPointsPerLevel::PointFractionLeft, sizeof(PerkPointsPerLevel::PointFractionLeft));
             }
         }
+
+        // Get the Player Singleton
+		RE::PlayerCharacter* Player = RE::PlayerCharacter::GetSingleton();
+        
+        // Set Last Known Player Level
+        if (Player && LastKnownPlayerLevel == 1)
+        {
+            LastKnownPlayerLevel = Player->GetLevel();
+        }
     }
 
     void F4SERevertCallback(const F4SE::SerializationInterface*)

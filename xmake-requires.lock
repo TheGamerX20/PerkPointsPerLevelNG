@@ -9,7 +9,15 @@
                 commit = "537a3899537eff8285e553d307e635ebee349e9f",
                 url = "https://gitlab.com/tboox/xmake-repo.git"
             },
-            version = "4.0.0"
+            version = "3.31.6-msvc6"
+        },
+        ["ninja#31fecfc4"] = {
+            repo = {
+                branch = "master",
+                commit = "6e181d95a34adff7f90b95c84f211128007abe25",
+                url = "https://gitlab.com/tboox/xmake-repo.git"
+            },
+            version = "1.12.1"
         },
         ["simpleini#31fecfc4"] = {
             repo = {
